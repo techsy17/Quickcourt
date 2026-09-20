@@ -10,7 +10,7 @@ export const PriceBreakdown = ({
   selectedDate,
   selectedSlot,
   onProceed,
-  disabled = false,
+  disabled = true,
 }) => {
   const price = court?.pricingPerHour || 0;
   const convenienceFee = 0;
