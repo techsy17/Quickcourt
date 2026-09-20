@@ -1,0 +1,7 @@
+const FACILITY_STATUS = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  REJECTED: 'REJECTED',
+};
+
+module.exports = FACILITY_STATUS;

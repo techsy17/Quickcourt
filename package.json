@@ -1,0 +1,19 @@
+{
+  "name": "quickcourt-monorepo",
+  "version": "1.0.0",
+  "description": "QuickCourt - A Local Sports Booking Platform (MERN)",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "seed": "npm --prefix server run seed",
+    "clear": "npm --prefix server run clear",
+    "check-db": "npm --prefix server run check-db",
+    "dev": "npx concurrently -n \"SERVER,CLIENT\" -c \"cyan,green\" \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "author": "QuickCourt",
+  "license": "ISC"
+}
